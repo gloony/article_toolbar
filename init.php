@@ -21,6 +21,11 @@ class article_toolbar extends Plugin {
 
 	function hook_toolbar_button() {
 		?>
+		<button dojoType="dijit.form.Button" onclick="CommonDialogs.quickAddFeed()">
+			<i class="material-icons"
+               title="Subscribe to Feed">&nbsp;&#59548;&nbsp;</i>
+		</button>
+
 		<button dojoType="dijit.form.Button" onclick="Feeds.catchupAll()">
 			<i class="material-icons"
                title="Mark all read">&nbsp;&#10003;&nbsp;</i>
